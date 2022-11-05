@@ -60,6 +60,7 @@ public class JetsApplication {
 				af.addJetToFleet(scanner);
 				break;
 			case "8":
+				af.removeJetFromFleet(scanner);
 				break;
 			case "9":
 				keepGoing = false;

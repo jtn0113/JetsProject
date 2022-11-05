@@ -113,5 +113,22 @@ public class AirField {
 
 		jetsInArsenal.add(jet);
 	}
+	
+	public void removeJetFromFleet(Scanner scanner) {
+		int index = 0;
+		if (!jetsInArsenal.isEmpty()) {
+			System.out.println("Select a jet to delete: ");
+			for (Jet jet : jetsInArsenal) {
+				System.out.print(index+1 + ".) ");
+				System.out.println(jet);
+				index++;
+			}
+			
+			int indexToDelete = scanner.nextInt() - 1;
+			jetsInArsenal.remove(indexToDelete);
+			
+			System.out.println();
+		}
+	}
 
 }
