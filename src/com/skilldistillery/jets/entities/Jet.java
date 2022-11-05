@@ -74,11 +74,13 @@ public abstract class Jet {
 	}	
 	
 	public void fly() {
-		System.out.println("I belive I can fly");
+		double flyTime = getRange() / getSpeed();
+		System.out.println(toString());
+		System.out.println("This jet can fly for " + flyTime + " hours \n");
 	}
 	
 	public double getSpeedInMach() {
-		return 0;
+		return getSpeed() * 0.0013493510;
 	}
 	
 }

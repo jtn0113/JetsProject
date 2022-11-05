@@ -45,14 +45,14 @@ public class AirField {
 		for (Jet jet : jetsInArsenal) {
 			System.out.println(jet);
 		}
+		System.out.println();
 	}
 
 	public void showJetDetailsAndRange() {
 		for (Jet jet : jetsInArsenal) {
-			double flyTime = jet.getRange() / jet.getSpeed();
-			System.out.println(jet);
-			System.out.println("This jet can fly for " + flyTime + " hours \n");
+			jet.fly();
 		}
+		System.out.println();
 	}
 
 	public Jet getFastestJet() {
